@@ -45,6 +45,58 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <h2 class="visually-hidden">филтры</h2>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                    Басейн
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="so-intense">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" value="care-products">
+                    Мотель
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="product-group" value="accessories">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+          <p>здесь должен быть ползунок, но я не знаю как его сделать</p>
+          <button class="button butten-filter butten-filter__blue " type="submit">Примменить</button>
+          <button class="button butten-filter butten-filter__hidden" type="submit">Сбросить</button>
         </section>
         <section class="newsletter">
           <h2 class="visually-hidden">Подписка на рассылки</h2>
