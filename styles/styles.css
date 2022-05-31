@@ -20,3 +20,30 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
+.visually-hidden {
+  visibility: hidden;
+}
+.header-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+.menu-item {
+  list-style-type: none;
+}
+.menu-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+}
+.butten {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.butten__brown {
+  background-color: #756157;
+}
