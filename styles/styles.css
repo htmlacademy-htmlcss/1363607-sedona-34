@@ -70,6 +70,9 @@ body {
 }
 
 /*стили для greetings*/
+.greetings {
+  text-align: center;
+}
 .greetings-deescription-title {
   font-weight: 700;
   font-size: 30px;
@@ -85,3 +88,29 @@ body {
 }
 
 /*стили для advantages*/
+.advantages-grid {
+  text-align: center;
+}
+.advantages-grid-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+.advantages-grid-title__white {
+  color: #ffffff;
+  background-color: #333333;
+}
+.advantages-grid-subtitle {
+  color: #000000;
+}
+.advantages-grid-subtitle__white {
+  color: #ffffff;
+  background-color: #333333;
+}
+.advantages-grid-text__white {
+  color: #ffffff;
+  background-color: #333333;
+}
