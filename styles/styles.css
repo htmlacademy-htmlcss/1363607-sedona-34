@@ -23,6 +23,17 @@ body {
 .visually-hidden {
   visibility: hidden;
 }
+
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*Стили для header*/
 .header-page {
   color: #000000;
   background-color: #ffffff;
@@ -38,6 +49,7 @@ body {
 }
 .butten {
   color: #ffffff;
+  background-color: #333333;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -47,3 +59,29 @@ body {
 .butten__brown {
   background-color: #756157;
 }
+
+/*стили для index-baner*/
+.index-baner {
+  height: 485px;
+  background: url("../images/baner/icon/Vector.svg") bottom no-repeat,
+    url("../images/baner/index-background.jpg") center / cover no-repeat, #333333;
+  text-align: center;
+  padding-top: 46px;
+}
+
+/*стили для greetings*/
+.greetings-deescription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.greetings-deescription-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*стили для advantages*/
