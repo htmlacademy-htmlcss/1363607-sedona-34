@@ -117,6 +117,8 @@ body {
 
 /*стили для блока поиск*/
 .search {
+  height: 233px;
+  padding: 91px 313px 93px 313px;
   text-align: center;
 }
 .search-title {
@@ -137,4 +139,40 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/*стили для блока рассылки*/
+.newsletter {
+  height: 223px;
+  background: url("../images/background.jpg") center / cover no-repeat, #333333;
+  text-align: center;
+  margin: 0;
+  padding: 94px 200px;
+}
+.newsletter-title {
+  font-family: "PT Sans" sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 29px 0;
+}
+.newsletter-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: 0 0 46px 0;
+}
+.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.butten__blue {
+  background-color: #82b3d3;
 }
