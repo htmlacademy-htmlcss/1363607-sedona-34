@@ -114,3 +114,27 @@ body {
   color: #ffffff;
   background-color: #333333;
 }
+
+/*стили для блока поиск*/
+.search {
+  text-align: center;
+}
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+.search-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+.button-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
