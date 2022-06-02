@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -175,4 +175,17 @@ body {
 }
 .butten__blue {
   background-color: #82b3d3;
+}
+
+/* стили для подвала*/
+.footer-page {
+  text-align: center;
+}
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
