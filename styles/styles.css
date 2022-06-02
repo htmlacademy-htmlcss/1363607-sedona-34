@@ -231,6 +231,7 @@ body {
   color: #ffffff;
   background-color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 .butten-filter__blue {
   background-color: #82b3d3;
@@ -240,4 +241,27 @@ body {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+/*стили для блока каталог*/
+.control-panel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.control-panel-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.catalog-card {
+  list-style-type: none;
+  text-align: center;
+}
+.card-discription-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
 }
