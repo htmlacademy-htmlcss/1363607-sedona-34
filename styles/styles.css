@@ -110,18 +110,14 @@ body {
 /*стили для advantages*/
 .advantages-grid {
   display: grid;
-  /*position: relative;*/
-
   grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   text-align: center;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 .advantages-grid-item {
   max-height: 384px;
-}
-.advantages-grid-item__blue-second1 {
-  background: rgba(131, 179, 211, 0.12);
 }
 
 .grid-item-2 {
@@ -137,11 +133,9 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0 0 30px 0;
-  /*background-color: #ffffff;*/
 }
 .advantages-grid-title__white {
   color: #ffffff;
-  /*background-color: #333333;*/
 }
 .advantages-grid-subtitle {
   color: #000000;
@@ -149,14 +143,9 @@ body {
 }
 .advantages-grid-subtitle__white {
   color: #ffffff;
-  /*background-color: #333333;*/
 }
 .advantages-grid-text__white {
   color: #ffffff;
-  /*background-color: #333333;*/
-}
-.advantages-grid-item__blue-second2 {
-  background: rgba(131, 179, 211, 0.12);
 }
 .advantages-grid-text {
   margin: 0;
@@ -191,6 +180,15 @@ body {
 }
 .grid-box-row2 {
   padding: 80px 85px 81px 85px;
+}
+.grid-box-gray1 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.grid-box-gray2 {
+  background: rgba(131, 179, 211, 0.2);
+}
+.grid-box-row4 {
+  padding: 103px 85px 102px 85px;
 }
 
 /*стили для блока поиск*/
