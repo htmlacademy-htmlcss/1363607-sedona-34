@@ -215,8 +215,8 @@ body {
   align-items: center;
   position: relative;
   height: 233px;
-  padding: 91px 313px 93px 313px;
-  /*text-align: center;*/
+  padding: 91px 304px 93px 304px;
+  text-align: center;
 }
 .search-title {
   font-weight: 700;
@@ -225,10 +225,12 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
+  margin: 0 0 29px 0;
 }
 .search-text {
   font-size: 22px;
   line-height: 26px;
+  margin: 0 0 56px 0;
 }
 .button-search {
   font-weight: 700;
