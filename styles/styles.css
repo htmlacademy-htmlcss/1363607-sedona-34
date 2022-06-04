@@ -35,11 +35,25 @@ body {
 
 /*Стили для header*/
 .header-page {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
   color: #000000;
   background-color: #ffffff;
+  padding: 0 70px;
+}
+.menu-list {
+  display: flex;
+  padding: 20px 62px 20px 17px;
+  margin: 0;
+}
+.menu-user {
+  padding-right: 0;
 }
 .menu-item {
   list-style-type: none;
+  margin: 0 34px 0 0;
 }
 .menu-link {
   font-size: 20px;
@@ -71,9 +85,14 @@ body {
 
 /*стили для greetings*/
 .greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .greetings-deescription-title {
+  width: 594px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
