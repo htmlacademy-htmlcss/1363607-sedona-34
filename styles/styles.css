@@ -171,6 +171,27 @@ body {
   padding: 92px 85px;
   background-color: #82b3d3;
 }
+.advantages-grid-house {
+  width: 75px;
+  height: 72px;
+  background: url("../images/advantages/icon/hause.svg") no-repeat;
+  margin: 0 0 30px 0;
+}
+.advantages-grid-food {
+  width: 75px;
+  height: 72px;
+  background: url("../images/advantages/icon/burger.svg") no-repeat;
+  margin: 0 0 30px 0;
+}
+.advantages-grid-souvenirs {
+  width: 75px;
+  height: 76px;
+  background: url("../images/advantages/icon/souvenirs.svg") no-repeat;
+  margin: 0 0 30px 0;
+}
+.grid-box-row2 {
+  padding: 80px 85px 81px 85px;
+}
 
 /*стили для блока поиск*/
 .search {
