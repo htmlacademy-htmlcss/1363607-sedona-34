@@ -21,6 +21,9 @@ body {
   background-color: #ffffff;
 }
 .visually-hidden {
+  position: absolute;
+  top: 0;
+  left: center;
   visibility: hidden;
 }
 
@@ -50,6 +53,7 @@ body {
 }
 .menu-user {
   padding-right: 0;
+  justify-content: end;
 }
 .menu-item {
   list-style-type: none;
@@ -75,6 +79,10 @@ body {
 }
 
 /*стили для index-baner*/
+
+.main-index {
+  position: relative;
+}
 .index-baner {
   height: 485px;
   background: url("../images/baner/icon/Vector.svg") bottom no-repeat,
@@ -88,26 +96,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 282px;
   align-items: center;
   text-align: center;
+  padding: 63px 270px 90px 270px;
 }
 .greetings-deescription-title {
-  width: 594px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  /*background-color: #ffffff;*/
+  text-transform: uppercase;
+  margin: 0 0 31px 0;
+  text-align: center;
 }
 .greetings-deescription-text {
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
-  margin-bottom: 70px;
+  margin: 0;
 }
 
-/*стили для advantages*/
+/*Преимущества*/
+
+.advantages {
+  position: relative;
+}
+
 .advantages-grid {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(3, 1fr);
@@ -193,9 +210,13 @@ body {
 
 /*стили для блока поиск*/
 .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   height: 233px;
   padding: 91px 313px 93px 313px;
-  text-align: center;
+  /*text-align: center;*/
 }
 .search-title {
   font-weight: 700;
@@ -355,4 +376,8 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #ffffff;
+}
+
+.footer-page {
+  position: relative;
 }
