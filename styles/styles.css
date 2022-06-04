@@ -97,7 +97,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 .greetings-deescription-text {
   font-size: 22px;
@@ -111,10 +111,14 @@ body {
 .advantages-grid {
   display: grid;
   /*position: relative;*/
+
   grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   text-align: center;
   list-style-type: none;
   padding: 0;
+}
+.advantages-grid-item {
+  max-height: 384px;
 }
 .advantages-grid-item__blue-second1 {
   background: rgba(131, 179, 211, 0.12);
@@ -132,22 +136,32 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  background-color: #ffffff;
+  margin: 0 0 30px 0;
+  /*background-color: #ffffff;*/
 }
 .advantages-grid-title__white {
   color: #ffffff;
-  background-color: #333333;
+  /*background-color: #333333;*/
 }
 .advantages-grid-subtitle {
   color: #000000;
 }
 .advantages-grid-subtitle__white {
   color: #ffffff;
-  background-color: #333333;
+  /*background-color: #333333;*/
 }
 .advantages-grid-text__white {
   color: #ffffff;
-  background-color: #333333;
+  /*background-color: #333333;*/
+}
+.advantages-grid-item__blue-bassic3 {
+  background-color: #82b3d3;
+}
+.advantages-grid-item__blue-second2 {
+  background: rgba(131, 179, 211, 0.12);
+}
+.advantages-grid-text {
+  margin: 0;
 }
 
 /*стили для блока поиск*/
