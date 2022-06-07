@@ -39,9 +39,9 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
-.Logo {
-  display: block;
-  margin-right: 30px;
+.logo {
+  width: 140px;
+  margin-right: 20px;
 }
 .menu-list {
   width: 528px;
@@ -317,6 +317,7 @@ body {
   color: #ffffff;
   background-color: #333333;
 }
+
 .catalog-filter-list {
   list-style-type: none;
 }

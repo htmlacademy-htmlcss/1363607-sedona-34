@@ -24,80 +24,85 @@
             <a class="menu-link menu-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="menu-list menu-user">
-          <li class="menu-item">
-            <a class="menu-link" href="#"><span class="visually-hidden">поиск</span></a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#"><span class="visually-hidden">Избранное</span></a>
-          </li>
-          <a class="butten butten-medium butten__brown" href="#">Хочу сюда</a>
-        </ul>
       </nav>
+      <ul class="menu-list menu-user">
+        <li class="menu-item">
+          <a class="menu-link" href="#"><span class="visually-hidden">поиск</span></a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        </li>
+        <a class="butten butten-medium butten__brown" href="#">Хочу сюда</a>
+      </ul>
+
     </header>
     <main class="main-inner main-container">
       <section class="selection">
-        <h1 class="selection-title">Гостиныцы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <h2 class="visually-hidden">филтры</h2>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
-                  Басейн
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="so-intense">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="care-products">
-                  Мотель
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="accessories">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
-        <p>здесь должен быть ползунок, но я не знаю как его сделать</p>
-        <button class="button butten-filter butten-filter__blue " type="submit">Примменить</button>
-        <button class="button butten-nidden" type="reset">Сбросить</button>
+        <div class="selection-container">
+          <h1 class="selection-title">Гостиныцы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+          <div class="catalog-filter-container">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <h2 class="visually-hidden">филтры</h2>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                      Басейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="so-intense">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="care-products">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="accessories">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+            <p>здесь должен быть ползунок, но я не знаю как его сделать</p>
+            <button class="button butten-filter butten-filter__blue " type="submit">Примменить</button>
+            <button class="button butten-nidden" type="reset">Сбросить</button>
+          </div>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
