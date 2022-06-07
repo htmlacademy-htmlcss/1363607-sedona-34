@@ -12,43 +12,40 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 
 body {
+  height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
 }
-.visually-hidden {
-  position: absolute;
-  top: 0;
-  left: center;
-  visibility: hidden;
-}
-
-.main-page-container {
+.main-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
+  min-height: 100%;
+  margin: 0;
 }
 
 /*Стили для header*/
 .header-page {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
   color: #000000;
   background-color: #ffffff;
   padding: 0 70px;
 }
+.menu {
+  flex: 1 1 auto;
+}
 .menu-list {
   display: flex;
-  padding: 20px 62px 20px 17px;
   margin: 0;
 }
 .menu-user {
@@ -59,12 +56,16 @@ body {
   list-style-type: none;
   margin: 0 34px 0 0;
 }
+.menu-item:last-child {
+  margin-right: 0;
+}
 .menu-link {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   text-decoration: none;
 }
+
 .butten {
   color: #ffffff;
   background-color: #333333;
@@ -74,6 +75,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .butten__brown {
   background-color: #756157;
 }
@@ -81,7 +83,7 @@ body {
 /*стили для index-baner*/
 
 .main-index {
-  position: relative;
+  flex-grow: 1;
 }
 .index-baner {
   height: 485px;
@@ -120,10 +122,6 @@ body {
 }
 
 /*Преимущества*/
-
-.advantages {
-  position: relative;
-}
 
 .advantages-grid {
   display: grid;
