@@ -23,7 +23,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 .main-page {
   display: flex;
@@ -35,29 +35,25 @@ body {
 /*Стили для header*/
 .header-page {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #000000;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
-  padding: 0 70px;
 }
-.menu {
-  flex: 1 1 auto;
+.Logo {
+  display: block;
+  margin-right: 30px;
 }
 .menu-list {
-  display: flex;
+  width: 528px;
   margin: 0;
+  padding: 0;
 }
 .menu-user {
-  padding-right: 0;
-  justify-content: end;
+  max-width: 306px;
+  margin-left: auto;
 }
 .menu-item {
   list-style-type: none;
-  margin: 0 34px 0 0;
-}
-.menu-item:last-child {
-  margin-right: 0;
 }
 .menu-link {
   font-size: 20px;
@@ -84,6 +80,9 @@ body {
 
 .main-index {
   flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 .index-baner {
   height: 485px;
@@ -376,8 +375,4 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #ffffff;
-}
-
-.footer-page {
-  position: relative;
 }
