@@ -348,6 +348,11 @@ body {
 }
 
 /*стили для блока каталог*/
+
+.catalog-container {
+  width: 1056px;
+  margin: 0 auto;
+}
 .control-panel-title {
   font-weight: 700;
   font-size: 30px;
