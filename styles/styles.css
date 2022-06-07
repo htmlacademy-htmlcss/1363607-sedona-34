@@ -275,7 +275,14 @@ body {
 
 /* стили для подвала*/
 .footer-page {
-  text-align: center;
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.footer-social {
+  width: 142px;
 }
 .footer-phone {
   font-size: 40px;
