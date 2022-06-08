@@ -51,25 +51,32 @@ body {
 }
 .logo {
   width: 140px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .menu-list {
   width: 528px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .menu-user {
   max-width: 306px;
   margin-left: auto;
 }
-.menu-item {
-  list-style-type: none;
-}
+
 .menu-link {
+  display: block;
+  padding: 20px 17px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   text-decoration: none;
+}
+.menu-user .menu-link {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .butten {
@@ -81,7 +88,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.butten-medium {
+  display: block;
+  padding: 8px 15px 9px 15px;
+  border-radius: 5px;
+}
 .butten__brown {
   background-color: #756157;
 }
