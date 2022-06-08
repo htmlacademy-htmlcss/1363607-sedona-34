@@ -65,6 +65,7 @@ body {
 .menu-user {
   max-width: 306px;
   margin-left: auto;
+  justify-content: end;
 }
 
 .menu-link {
