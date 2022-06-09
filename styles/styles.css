@@ -303,10 +303,23 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   background-color: #ffffff;
+  
 }
 .footer-social {
-  width: 142px;
+  max-width: 144px;
 }
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
