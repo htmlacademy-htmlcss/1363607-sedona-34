@@ -287,14 +287,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  /*color: #ffffff;*/
   margin: 0 0 29px 0;
 }
 .newsletter-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  /*color: #ffffff;*/
   margin: 0 0 46px 0;
 }
 .newsletter-button {
