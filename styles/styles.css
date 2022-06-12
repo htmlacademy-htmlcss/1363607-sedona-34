@@ -12,6 +12,11 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   height: 100%;
 }
@@ -44,6 +49,7 @@ body {
 
 /*Стили для header*/
 .header-page {
+  padding: 0 70px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -80,6 +86,13 @@ body {
   min-width: 18px;
   min-height: 18px;
 }
+.menu-link-search {
+  background: url("../images/header/search.svg") no-repeat center center;
+}
+.menu-link-favorite {
+  margin-right: 20px;
+  background: url("../images/header/favorite.svg") no-repeat center center;
+}
 
 .butten {
   color: #ffffff;
@@ -102,17 +115,17 @@ body {
 /*стили для index-baner*/
 
 .main-container {
-  flex-grow: 1;
   width: 1200px;
+  flex-grow: 1;
   margin: 0 auto;
   background-color: #ffffff;
 }
 .index-baner {
   height: 485px;
+  padding-top: 46px;
   background: url("../images/baner/icon/Vector.svg") bottom no-repeat,
     url("../images/baner/index-background.jpg") center / cover no-repeat, #333333;
   text-align: center;
-  padding-top: 46px;
 }
 
 /*стили для greetings*/
@@ -230,12 +243,8 @@ body {
 
 /*стили для блока поиск*/
 .search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 233px;
-  padding: 91px 304px 93px 304px;
+  margin: 0;
+  padding: 91px 304px 93px;
   text-align: center;
 }
 .search-title {
@@ -262,7 +271,6 @@ body {
 
 /*стили для блока рассылки*/
 .newsletter {
-  height: 223px;
   background: url("../images/background.jpg") center / cover no-repeat, #333333;
   text-align: center;
   margin: 0;
@@ -303,7 +311,6 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   background-color: #ffffff;
-  
 }
 .footer-social {
   max-width: 144px;
