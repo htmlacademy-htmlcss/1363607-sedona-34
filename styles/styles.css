@@ -271,10 +271,15 @@ body {
 
 /*стили для блока рассылки*/
 .newsletter {
-  background: url("../images/background.jpg") center / cover no-repeat, #333333;
   text-align: center;
   margin: 0;
   padding: 94px 200px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.newsletter-image {
+  color: #ffffff;
+  background: url("../images/background.jpg") center / cover no-repeat, #333333;
 }
 .newsletter-title {
   font-family: "PT Sans" sans-serif;
@@ -282,14 +287,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
+  /*color: #ffffff;*/
   margin: 0 0 29px 0;
 }
 .newsletter-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #ffffff;
+  /*color: #ffffff;*/
   margin: 0 0 46px 0;
 }
 .newsletter-button {
