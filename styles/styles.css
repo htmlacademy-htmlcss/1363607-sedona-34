@@ -356,7 +356,9 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  background-color: #333333;
+}
+.breadcrumbs {
+  margin: 0 0 40px 0;
 }
 .breadcrumbs-item {
   list-style-type: none;
@@ -368,35 +370,50 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  background-color: #333333;
 }
 .catalog-filter-container {
   display: flex;
+  align-items: center;
 }
 .catalog-filter-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #333333;
 }
-
+.catalog-filter-group {
+  margin-right: 70px;
+  padding: 0;
+}
+.catalog-filter-group:last-child {
+  margin: 0;
+}
 .catalog-filter-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .catalog-filter-item {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
-  background-color: #333333;
+}
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
+}
+.catalog-filter-booton {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 .butten-filter {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #333333;
   text-transform: uppercase;
   text-align: center;
 }
@@ -408,6 +425,7 @@ body {
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  background-color: transparent;
 }
 
 /*стили для блока каталог*/
@@ -415,6 +433,7 @@ body {
 .catalog-container {
   width: 1056px;
   margin: 0 auto;
+  padding-top: 50px;
 }
 .catalog-control-panel {
   display: flex;
