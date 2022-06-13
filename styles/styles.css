@@ -485,16 +485,43 @@ body {
 }
 
 /*стили для пагинации*/
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pagination-item {
+  margin-right: 8px;
+}
+.pagination-item:last-child {
+  margin-right: 0;
+}
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82b3d3;
 }
 .pagination-current {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+}
+.pagination-control {
+  display: flex;
+  width: 386px;
+  justify-content: space-between;
 }
