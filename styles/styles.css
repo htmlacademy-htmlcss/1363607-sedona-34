@@ -123,7 +123,7 @@ body {
 .index-baner {
   height: 485px;
   padding-top: 46px;
-  background: url("../images/baner/icon/Vector.svg") bottom no-repeat,
+  background: url("../images/baner/icon/footer.svg") bottom no-repeat,
     url("../images/baner/index-background.jpg") center / cover no-repeat, #333333;
   text-align: center;
 }
