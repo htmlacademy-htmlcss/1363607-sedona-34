@@ -342,7 +342,16 @@ body {
 }
 
 /*стили для блока фильтров*/
+.selection {
+  margin: 0;
+  padding: 35px 70px 70px;
+  background: url("../images/catalog/catalog-bg.jpg") center / cover no-repeat, #333333;
+}
+.selection-container {
+  width: 1060px;
+}
 .selection-title {
+  margin: 0 0 10px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -352,11 +361,17 @@ body {
 .breadcrumbs-item {
   list-style-type: none;
 }
+.catalog-filter {
+  display: flex;
+}
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   background-color: #333333;
+}
+.catalog-filter-container {
+  display: flex;
 }
 .catalog-filter-title {
   font-weight: 700;
