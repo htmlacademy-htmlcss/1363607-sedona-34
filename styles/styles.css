@@ -312,7 +312,9 @@ body {
   display: flex;
   width: 1200px;
   justify-content: space-between;
+  text-align: center;
   margin: 0 auto;
+  padding: 45px 70px 35px;
   background-color: #ffffff;
 }
 .footer-social {
@@ -399,6 +401,9 @@ body {
   width: 1056px;
   margin: 0 auto;
 }
+.catalog-control-panel {
+  display: flex;
+}
 .control-panel-title {
   font-weight: 700;
   font-size: 30px;
@@ -409,6 +414,30 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+.select-control {
+  margin-left: auto;
+}
+.select-view {
+  display: flex;
+  margin: 0 0 0 78px;
+  padding: 0;
+  list-style-type: none;
+}
+.select-view-item {
+  margin-right: 8px;
+}
+.select-view-item:last-child {
+  margin-right: 0;
+}
+.select-view-item .button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 17px 16px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 .catalog-card {
   list-style-type: none;
