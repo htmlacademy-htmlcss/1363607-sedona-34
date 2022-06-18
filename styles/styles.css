@@ -94,21 +94,22 @@ body {
   background: url("../images/header/favorite.svg") no-repeat center center;
 }
 
-.butten {
+.button {
   color: #ffffff;
   background-color: #333333;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-.butten-medium {
+.button-medium {
   display: block;
   padding: 8px 15px 9px 15px;
   border-radius: 5px;
 }
-.butten__brown {
+.button__brown {
   background-color: #756157;
 }
 
@@ -294,7 +295,7 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-.butten__blue {
+.button__blue {
   background-color: #82b3d3;
 }
 
@@ -400,7 +401,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.butten-filter {
+.button-filter {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -408,10 +409,10 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.butten-filter__blue {
+.button-filter__blue {
   background-color: #82b3d3;
 }
-.butten-nidden {
+.button-nidden {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -475,19 +476,38 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-bottom: 66px;
   list-style-type: none;
-  text-align: center;
 }
-.catalog-card-item {
+/*.catalog-card-item {
   display: flex;
   justify-content: center;
   margin: 0 0 16px 0;
+}*/
+.card-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 16px 0;
+  gap: 20px;
+}
+.card-item:last-child {
+  margin: 0;
+}
+.card-image {
+  grid-column: 1 / 3;
 }
 .card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
+  grid-column: 1 / 3;
+}
+.card-subtitle {
+  margin: 0;
+}
+.card-price {
   margin: 0;
 }
 
