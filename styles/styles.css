@@ -395,7 +395,7 @@ body {
 .catalog-filter-item:last-child {
   margin-bottom: 0;
 }
-.catalog-filter-booton {
+.catalog-filter-button {
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -482,7 +482,6 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 0 16px 0;
-
 }
 .card-title {
   font-weight: 700;
