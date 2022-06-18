@@ -479,11 +479,7 @@ body {
   margin-bottom: 66px;
   list-style-type: none;
 }
-/*.catalog-card-item {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 16px 0;
-}*/
+
 .card-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
