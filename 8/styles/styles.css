@@ -497,7 +497,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 0;
+  margin: 0 0 16px 0;
   grid-column: 1 / 3;
 }
 .card-subtitle {
@@ -527,14 +527,15 @@ body {
   margin-right: 0;
 }
 .pagination-link {
-  display: block;
+  display: flex;
   width: 60px;
   height: 60px;
   padding: 12px 24px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
