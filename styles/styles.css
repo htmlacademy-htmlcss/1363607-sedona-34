@@ -90,8 +90,24 @@ body {
   background: url("../images/header/search.svg") no-repeat center center;
 }
 .menu-link-favorite {
+  position: relative;
   margin-right: 20px;
   background: url("../images/header/favorite.svg") no-repeat center center;
+}
+.menu-link-favorite::after {
+  content: "12";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 1px;
+  right: -6px;
+  padding-top: 3px;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 50%;
 }
 
 .button {
