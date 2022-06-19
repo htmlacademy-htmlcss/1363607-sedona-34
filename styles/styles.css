@@ -366,18 +366,47 @@ body {
   color: #ffffff;
 }
 .breadcrumbs {
+  display: flex;
+  align-items: center;
   margin: 0 0 40px 0;
+  padding: 0;
 }
 .breadcrumbs-item {
+  margin-right: 25px;
   list-style-type: none;
 }
-.catalog-filter {
-  display: flex;
-}
 .breadcrumbs-link {
+  display: block;
+  min-width: 13px;
+  min-height: 16px;
+  padding: 3;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+.breadcrumbs-icon {
+  position: relative;
+  background: url("../images/catalog/icon/about.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 13px;
+}
+.breadcrumbs-icon::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 9px;
+  top: 0;
+  left: 23px;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+  padding-left: 25px;
+  background: url("../images/catalog/icon/arrow.svg") no-repeat;
+  background-size: 6px 8px;
+}
+.catalog-filter {
+  display: flex;
 }
 .catalog-filter-container {
   display: flex;
