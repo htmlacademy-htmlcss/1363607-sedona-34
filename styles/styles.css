@@ -556,6 +556,15 @@ body {
 .card-price {
   margin: 0;
 }
+.card-icon {
+  display: block;
+  background-image: url("../images/catalog/icon/star.svg");
+  background-repeat: repeat-x;
+}
+.button__grey {
+  color: #333333;
+  background-color: #f2f2f2;
+}
 
 /*стили для пагинации*/
 .pagination {
