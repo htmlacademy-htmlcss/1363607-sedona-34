@@ -316,14 +316,16 @@ body {
 }
 
 /* стили для подвала*/
+
 .footer-page {
   display: flex;
   width: 1200px;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
-  margin: 0 auto;
   padding: 45px 70px 35px;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 .footer-social {
   max-width: 144px;
@@ -338,8 +340,11 @@ body {
 .footer-social-item {
   width: 48px;
   height: 40px;
+  padding: 11px 12px;
 }
-
+.button-footer {
+  background-color: #ffffff;
+}
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -348,6 +353,9 @@ body {
   background-color: #ffffff;
   text-decoration: none;
 }
+/*.footer-logo-link {
+  padding: 8px 0;
+}*/
 
 /*стили для блока фильтров*/
 .selection {
