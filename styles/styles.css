@@ -515,9 +515,12 @@ body {
   border: 2px solid #000000;
 }
 .card-toggle:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
-.card-toggle-current:active {
+.card-toggle:active {
+  border: 2px solid #000000;
+}
+.card-toggle-current {
   border: 2px solid #000000;
 }
 
@@ -602,24 +605,32 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
-  border: 1px solid #82B3D3;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
 .pagination-link:hover {
-  background: #68A2CA;
-  border: 1px solid #82B3D3;
+  background: #68a2ca;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
 .pagination-link:focus {
-  background: #68A2CA;
-  border: 1px solid #82B3D3;
+  background: #68a2ca;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
 }
-.pagination-current:active {
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82b3d3;
+  border: 1px solid #82b3d3;
+  border-radius: 4px;
+}
+.pagination-current {
   color: #000000;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
+  border: none;
   border-radius: 4px;
 }
 .pagination-control {
