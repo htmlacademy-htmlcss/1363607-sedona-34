@@ -364,9 +364,38 @@ body {
   background-color: #ffffff;
   text-decoration: none;
 }
-/*.footer-logo-link {
-  padding: 8px 0;
-}*/
+.footer-phone:hover {
+  color: #756157;
+}
+.footer-phone:focus {
+  color: #756157;
+}
+.footer-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+.footer-logo-link {
+  position: relative;
+  display: block;
+  width: 116px;
+}
+.footer-logo-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.footer-logo-icon:hover {
+  fill: #756157;
+}
+.footer-logo-icon:focus {
+  fill: #756157;
+}
+.footer-logo-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 /*стили для блока фильтров*/
 .selection {
