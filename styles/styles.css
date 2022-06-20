@@ -381,6 +381,7 @@ body {
 }
 .breadcrumbs-item {
   margin-right: 25px;
+  position: relative;
   list-style-type: none;
 }
 .breadcrumbs-link {
@@ -392,27 +393,32 @@ body {
   line-height: 21px;
   color: #ffffff;
 }
-.breadcrumbs-icon {
-  position: relative;
-  background: url("../images/catalog/icon/about.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 13px 13px;
-}
-.breadcrumbs-icon::after {
+
+.breadcrumbs-item::after {
   content: "";
   position: absolute;
   width: 6px;
   height: 9px;
-  top: 0;
-  left: 23px;
-  right: 0;
-  bottom: 0;
-  margin: auto 0;
-  padding-left: 25px;
-  background: url("../images/catalog/icon/arrow.svg") no-repeat;
-  background-size: 6px 8px;
+  top: 6px;
+  right: -16px;
+  background: url("../images/catalog/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 13px;
 }
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-filter {
   display: flex;
 }
