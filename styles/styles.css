@@ -511,7 +511,13 @@ body {
 .card-toggle:last-child {
   margin-right: 0;
 }
-.card-toggle-current {
+.card-toggle:hover {
+  border: 2px solid #000000;
+}
+.card-toggle:focus {
+  border: 2px solid #68A2CA;
+}
+.card-toggle-current:active {
   border: 2px solid #000000;
 }
 
@@ -598,10 +604,23 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
 }
-.pagination-current {
+.pagination-link:hover {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+}
+.pagination-link:focus {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+}
+.pagination-current:active {
   color: #000000;
   background-color: #f2f2f2;
+  border-radius: 4px;
 }
 .pagination-control {
   display: flex;
