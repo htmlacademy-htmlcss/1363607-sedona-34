@@ -121,19 +121,22 @@ body {
 }
 
 .button {
-  color: #ffffff;
-  background-color: #333333;
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button-medium {
   display: block;
-  padding: 8px 15px 9px 15px;
-  border-radius: 5px;
+  padding: 9px 37px 8px 37px;
 }
 .button__brown {
   background-color: #756157;
@@ -280,6 +283,7 @@ body {
   margin: 0 0 56px 0;
 }
 .button-search {
+  padding: 12px 138px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -520,6 +524,7 @@ body {
   flex-direction: column;
 }
 .button-filter {
+  padding: 14px 22px 14px 23px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -527,14 +532,10 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.button-filter__blue {
-  background-color: #82b3d3;
-}
+
 .button-nidden {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
+  font-weight: 400;
+  text-transform: none;
   background-color: transparent;
 }
 
@@ -660,9 +661,45 @@ body {
 .card-greentree {
   width: 42px;
 }
+.button-card {
+  padding: 9px 1px 8px;
+}
+.button__green {
+  background-color: #7db54f;
+}
 .button__grey {
   color: #333333;
   background-color: #f2f2f2;
+}
+.button__brown:hover {
+  background-color: #615048;
+}
+.button__blue:hover {
+  background-color: #68a2ca;
+}
+.button__green:hover {
+  background-color: #6c9e42;
+}
+.button__brown:focus {
+  background-color: #615048;
+}
+.button__blue:focus {
+  background-color: #68a2ca;
+}
+.button__green:focus {
+  background-color: #6c9e42;
+}
+.button__brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+.button__blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+.button__green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
 }
 
 /*стили для пагинации*/
