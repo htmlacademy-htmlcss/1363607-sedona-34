@@ -105,14 +105,13 @@ body {
   margin-right: 20px;
   background: url("../images/header/favorite.svg") no-repeat center center;
 }
-.menu-link-favorite::after {
-  content: "12";
-  position: absolute;
+.favorite-total {
   width: 20px;
   height: 20px;
-  top: 1px;
-  right: -6px;
-  padding-top: 3px;
+  padding: 3px 1px;
+  top: 2px;
+  right: -8px;
+  position: absolute;
   font-size: 10px;
   line-height: 13px;
   text-align: center;
@@ -120,6 +119,7 @@ body {
   background-color: #7db54f;
   border-radius: 50%;
 }
+
 
 .button {
   color: #ffffff;
