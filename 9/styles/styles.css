@@ -634,8 +634,21 @@ body {
 .card-icon {
   display: block;
   background-image: url("../images/catalog/icon/star.svg");
-  background-repeat: repeat-x;
-  width: 60px;
+  background-repeat: space no-repeat;
+  background-position: 0 50%;
+}
+
+.card-arma {
+  width: 86px;
+}
+.card-villas {
+  width: 86px;
+}
+.card-desert {
+  width: 66px;
+}
+.card-greentree {
+  width: 42px;
 }
 .button__grey {
   color: #333333;
