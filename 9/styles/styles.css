@@ -635,6 +635,7 @@ body {
   display: block;
   background-image: url("../images/catalog/icon/star.svg");
   background-repeat: repeat-x;
+  width: 60px;
 }
 .button__grey {
   color: #333333;
