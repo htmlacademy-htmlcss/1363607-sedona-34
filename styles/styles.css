@@ -584,8 +584,10 @@ body {
   margin-bottom: 32px;
 }
 .catalog-filter-label {
+  padding: 14px 14px 13px 19px;
   /*display: flex;*/
   justify-content: space-between;
+  color: rgba(255, 255, 255, 0.3);
 }
 .catalog-filter-label:first-child {
   padding: 14px 14px 13px 19px;
@@ -598,7 +600,7 @@ body {
 }
 
 .range-input {
-  width: 50px;
+  width: 83px;
   padding: 0 2px;
   font-weight: 700;
   font-size: 16px;
