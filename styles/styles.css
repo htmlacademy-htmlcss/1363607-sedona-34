@@ -711,7 +711,7 @@ body {
   align-items: center;
   width: 290px;
 }
-.select-control {
+.select-controlб, .pagination-select-control {
   width: 100%;
   padding: 14px 126px 14px 20px;
   font: inherit;
@@ -724,10 +724,14 @@ body {
   border-radius: 4px;
   appearance: none;
 }
-.select-control:hover, .select-control:focus {
+.select-control:hover,
+.select-control:focus, 
+.pagination-select-control:hover, 
+.pagination-select-control:focus {
   border: 2px solid #68A2CA;
 }
-.select-control:active {
+.select-control:active, 
+.pagination-select-control:active {
   border: 2px solid #3F5E72;
 }
 .card-toggle {
@@ -931,3 +935,8 @@ body {
   width: 386px;
   justify-content: space-between;
 }
+.pagination-select {
+  display: flex;
+  width: 160px;
+}
+
