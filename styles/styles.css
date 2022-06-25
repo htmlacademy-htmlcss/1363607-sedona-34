@@ -339,6 +339,9 @@ body {
   border: none;
   border-radius: 10px 0 0 10px;
 }
+.fild::placeholder {
+  color: rgb(0, 0, 0, 0.6);
+}
 .newsletter-button {
   font: inherit;
   font-style: normal;
