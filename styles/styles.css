@@ -317,13 +317,40 @@ body {
   line-height: 26px;
   margin: 0 0 46px 0;
 }
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.newsletter-email {
+  display: flex;
+  margin: 0;
+}
+.field {
+  margin: 0;
+  padding: 20px 22px 19px 22px;
+  width: 600px;
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgb(0, 0, 0, 0.6);
+  background: #f2f2f2;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
 .newsletter-button {
+  font: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 0 10px 10px 0;
 }
 .button__blue {
   background-color: #82b3d3;
@@ -587,20 +614,18 @@ body {
   padding: 14px 14px 13px 19px;
   /*display: flex;*/
   justify-content: space-between;
-  
+
   color: rgba(255, 255, 255, 0.3);
 }
 .catalog-filter-label:first-child {
   margin: 0 -1px 0 0;
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
-  
 }
 .catalog-filter-label:last-child {
   margin: 0 0 0 -1px;
   border: 2px solid #ffffff;
   border-radius: 0 4px 4px 0;
-  
 }
 
 .range-input {
@@ -711,7 +736,8 @@ body {
   align-items: center;
   width: 290px;
 }
-.select-controlб, .pagination-select-control {
+.select-control,
+.pagination-select-control {
   width: 100%;
   padding: 14px 126px 14px 20px;
   font: inherit;
@@ -720,19 +746,19 @@ body {
   line-height: 21px;
   color: #333333;
   background: url("../images/catalog/icon/select-arrow.svg") right 20px center no-repeat;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
 }
 .select-control:hover,
-.select-control:focus, 
-.pagination-select-control:hover, 
+.select-control:focus,
+.pagination-select-control:hover,
 .pagination-select-control:focus {
-  border: 2px solid #68A2CA;
+  border: 2px solid #68a2ca;
 }
-.select-control:active, 
+.select-control:active,
 .pagination-select-control:active {
-  border: 2px solid #3F5E72;
+  border: 2px solid #3f5e72;
 }
 .card-toggle {
   display: flex;
@@ -939,4 +965,3 @@ body {
   display: flex;
   width: 160px;
 }
-

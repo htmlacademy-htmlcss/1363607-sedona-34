@@ -31,7 +31,8 @@
           <a class="menu-link menu-link-search" href="#"><span class="visually-hidden">поиск</span></a>
         </li>
         <li class="menu-item">
-          <a class="menu-link menu-link-favorite" href="#"><span class="favorite-total">12</span><span class="visually-hidden">Избранное</span></a>
+          <a class="menu-link menu-link-favorite" href="#"><span class="favorite-total">12</span><span
+              class="visually-hidden">Избранное</span></a>
         </li>
         <li class="menu-item">
           <a class="button button-medium button__brown" href="#">Хочу сюда</a>
@@ -150,8 +151,12 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-          <a class="button newsletter-button button__blue" href="#">Подписаться</a>
+          <p class="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+          </p>
+          <button class="button newsletter-button button__blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
