@@ -1038,30 +1038,35 @@ body {
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 .form-data:hover {
   background-color: #e6e6e6;
 }
 .form-data:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  border: #83b3d3;
+  border-radius: 3px;
 }
 .form-data:active {
   background-color: #ffffff;
-  border: 2px solid #000000;
+  border: #000000;
+  border-radius: 2px;
 }
 .form-data::placeholder {
   font: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 21px;
   color: #000000;
   opacity: 0.6;
 }
 .form-data::placeholder:active {
   color: #000000;
-  opacity: 0;
+  opacity: 1;
+}
+.appointment-form-adults,
+.appointment-form-children {
+  margin-top: 0;
 }
 .form-amount {
   max-width: 133px;
@@ -1086,6 +1091,8 @@ body {
 }
 .appointment-submit {
   grid-column: 1/-1;
+  max-width: 575px;
+  max-height: 60px;
   padding: 12px 26px;
   border-radius: 10px;
 }
@@ -1093,7 +1100,7 @@ body {
 .info {
   display: block;
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 54px;
   width: 25px;
   height: 25px;
@@ -1132,32 +1139,53 @@ body {
   line-height: 21px;
 }
 .form-toggle {
+  display: flex;
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+  /*border: 3px solid #83b3d3;
+  border-radius: 4px;*/
 }
 .form-number {
-  top: 5px;
-  right: 52px;
+  top: 10px;
+  right: 56px;
   font-weight: 400;
   font-size: 18px;
   line-height: 40px;
   color: #000000;
 }
 .toggle-left {
-  top: 11px;
-  right: 92px;
+  top: 10px;
+  right: 96px;
   color: rgb(0, 0, 0, 0.3);
 }
 .toggle-right {
-  top: 16px;
-  right: 19px;
+  top: 10px;
+  right: 13px;
   color: rgb(0, 0, 0, 0.3);
 }
 .toggle-left:hover,
 .toggle-right:hover {
   color: #000000;
+}
+.toggle-left:focus,
+.toggle-right:focus {
+  color: #000000;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+.toggle-left:active,
+.toggle-right:active {
+  opacity: 0.2;
+}
+.appointment-submit:focus {
+  border: 3px solid #756257;
+  border-radius: 10px;
 }
