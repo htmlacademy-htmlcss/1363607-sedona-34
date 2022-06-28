@@ -540,12 +540,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 .catalog-filter-group {
   margin: 0;
   padding: 0;
-  
+
   border: none;
 }
 .control {
@@ -564,6 +564,10 @@ body {
 }
 .control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
+}
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83b3d3;
 }
 .control-input:disabled + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
@@ -616,11 +620,17 @@ body {
 .catalog-filter-item:last-child {
   margin-bottom: 0;
 }
+
+/** Renge **/
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+
+/*** range-wrapper-inputs ***/
+
 .range-wrapper-inputs {
   display: grid;
   width: 288px;
@@ -628,42 +638,51 @@ body {
   margin-bottom: 32px;
 }
 .catalog-filter-label {
-  padding: 11px 14px 11px 19px;
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  border: 2px solid #ffffff;
-  color: rgba(255, 255, 255, 0.3);
+  position: relative;
 }
-.catalog-filter-label:first-child {
+.range-input {
+  max-width: 144px;
+  padding: 11px 14px 11px 19px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+.input-left {
   margin: 0 -1px 0 0;
-  
   border-radius: 4px 0 0 4px;
 }
-.catalog-filter-label:last-child {
+.input-right {
   margin: 0 0 0 -1px;
-  
   border-radius: 0 4px 4px 0;
 }
-.catalog-filter-label:hover {
-  opacity: 0.6;;
+.range-text {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  width: 21px;
+  height: 21px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.range-input:hover {
+  opacity: 0.6;
+}
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81b3d2;
+  outline: none;
+}
+.range-input:active {
+  background-color: #756257;
+  box-shadow: none;
+  opacity: 1;
 }
 
-.range-input {
-  width: 80px;
-  padding: 0 2px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  /*font: inherit;*/
-  /*text-align: center;*/
-  background-color: transparent;
-  border: none;
-  appearance: textfield;
-}
-.range-input::value {
-  border: none;
-} 
+/*** range-scale ***/
 .range-scale {
   position: relative;
   height: 4px;
@@ -695,6 +714,7 @@ body {
   border: 3px solid #83b3d3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  outline: none;
 }
 .range-toggle:active {
   background: #ffffff;
@@ -710,12 +730,15 @@ body {
   top: -8px;
   right: 0;
 }
+/*** filter-button ***/
 
 .catalog-filter-button {
   margin: 0;
   padding-top: 60px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+}
+.button-filter:not(:last-child) {
+  margin-bottom: 20px;
 }
 .button-filter {
   padding: 14px 22px 14px 23px;
@@ -728,12 +751,25 @@ body {
 }
 
 .button-nidden {
+  padding: 4px 14px;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   text-transform: none;
   background-color: transparent;
+  box-sizing: border-box;
 }
-
-/*стили для блока каталог*/
+.button-nidden:hover {
+  opacity: 0.6;
+}
+.button-nidden:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+.button-nidden:active {
+  opacity: 0.3;
+}
+/** catalog **/
 
 .catalog-container {
   width: 1056px;
