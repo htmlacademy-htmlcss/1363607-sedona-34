@@ -511,13 +511,23 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.catalog-filter {
-  display: flex;
-}
 .catalog-filter-container {
   display: flex;
   align-items: center;
 }
+
+.catalog-filter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 104px;
+}
+.filter-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+  justify-items: end;
+}
+
 .catalog-filter-title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -525,14 +535,18 @@ body {
   line-height: 26px;
   color: #ffffff;
 }
+.range-filter-title {
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff; 
+}
 .catalog-filter-group {
   margin: 0;
-  margin-right: 70px;
   padding: 0;
+  
   border: none;
-}
-.catalog-filter-group:last-child {
-  margin: 0;
 }
 .control {
   position: relative;
@@ -614,21 +628,24 @@ body {
   margin-bottom: 32px;
 }
 .catalog-filter-label {
-  padding: 14px 14px 13px 19px;
+  padding: 11px 14px 11px 19px;
   /*display: flex;*/
-  justify-content: space-between;
-
+  /*justify-content: space-between;*/
+  border: 2px solid #ffffff;
   color: rgba(255, 255, 255, 0.3);
 }
 .catalog-filter-label:first-child {
   margin: 0 -1px 0 0;
-  border: 2px solid #ffffff;
+  
   border-radius: 4px 0 0 4px;
 }
 .catalog-filter-label:last-child {
   margin: 0 0 0 -1px;
-  border: 2px solid #ffffff;
+  
   border-radius: 0 4px 4px 0;
+}
+.catalog-filter-label:hover {
+  opacity: 0.6;;
 }
 
 .range-input {
@@ -644,6 +661,9 @@ body {
   border: none;
   appearance: textfield;
 }
+.range-input::value {
+  border: none;
+} 
 .range-scale {
   position: relative;
   height: 4px;
@@ -692,7 +712,8 @@ body {
 }
 
 .catalog-filter-button {
-  margin-left: auto;
+  margin: 0;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
 }
