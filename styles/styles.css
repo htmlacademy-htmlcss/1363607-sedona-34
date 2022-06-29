@@ -1069,6 +1069,10 @@ body {
   background-color: #E6E6E6;
   box-shadow: 0 0 0 3px #83B3D3;
 }
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  fill: rgb(0, 0, 0, 0.3);
+  }
 .modal-close-button::before {
   content: "";
   position: absolute;
@@ -1110,13 +1114,13 @@ body {
 }
 .form-data:focus {
   background-color: #e6e6e6;
-  border: #83b3d3;
-  border-radius: 3px;
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
 }
 .form-data:active {
   background-color: #ffffff;
-  border: #000000;
-  border-radius: 2px;
+  box-shadow: 0 0 0 2px #000000;
+  outline: none;
 }
 .form-data::placeholder {
   font: inherit;
@@ -1140,6 +1144,11 @@ body {
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+.form-amount:focus {
+  outline: none;
 }
 .field-group label,
 .field-group input {
@@ -1160,14 +1169,17 @@ body {
   max-width: 575px;
   max-height: 60px;
   padding: 12px 26px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
   border-radius: 10px;
 }
 
 .info {
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 54px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: -2px;
   width: 25px;
   height: 25px;
   background-color: #83b3d3;
@@ -1246,12 +1258,50 @@ body {
   color: #000000;
   border: 3px solid #83b3d3;
   border-radius: 4px;
+  outline: none;
 }
 .toggle-left:active,
 .toggle-right:active {
+  border: none;
   opacity: 0.2;
 }
 .appointment-submit:focus {
-  border: 3px solid #756257;
+  box-shadow: 0 0 0 3px #756257;
+  /*border-radius: 10px;*/
+}
+.tooltip-triangle {
+  visibility: hidden;
+  position: absolute;
+  top: 31px;
+  right: 3px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #000000;
+  opacity: 0;
+   
+}
+.modal-tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 256px;
+  top: 40px;
+  transform: translateX(-50%);
+  padding: 15px 20px 18px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  background: url("../images/modal/triagle.svg") no-repeat center -10%;
+
+}
+.info:hover .modal-tooltip {
+  visibility: visible;
 }
