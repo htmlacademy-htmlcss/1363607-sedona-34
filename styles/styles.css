@@ -89,8 +89,6 @@ body {
   line-height: 26px;
   color: #000000;
   text-decoration: none;
-  outline: 5px solid #ff6347;
-  outline-offset: -5px;
 }
 .menu-link-current::before {
   content: "";
@@ -106,8 +104,6 @@ body {
   min-height: 18.1px;
   padding: 23px 11px;
   box-sizing: content-box;
-  outline: 5px solid #7db54f;
-  outline-offset: -5px;
 }
 .menu-link-search {
   background: url("../images/header/search.svg") no-repeat center center;
@@ -154,7 +150,7 @@ body {
   background-color: #756157;
 }
 
-/*стили для index-baner*/
+/** index-baner **/
 
 .main-container {
   width: 1200px;
@@ -164,7 +160,7 @@ body {
   transform: translateY(-5px);
 }
 .index-baner {
-  padding: 50px 0 83px;
+  padding: 51px 0 79px;
   background: url("../images/baner/icon/footer.svg") bottom no-repeat,
     url("../images/baner/index-background.jpg") center / cover no-repeat, #333333;
   text-align: center;
