@@ -63,123 +63,130 @@
           <div class="catalog-filter-container">
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <h2 class="visually-hidden">филтры</h2>
+              <div class="filter-group">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <ul class="catalog-filter-list">
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура</legend>
-                <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Басейн</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Басейн</span>
-                    </label>
-                  </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class=" visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool"
+                          checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class=" visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool"
-                        checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Парковка</span>
-                    </label>
-                  </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="so-intense">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="so-intense">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Wi-Fi</span>
-                    </label>
-                  </li>
+                  </ul>
+                </fieldset>
 
-                </ul>
-              </fieldset>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Тип жилья</legend>
+                  <ul class="catalog-filter-list">
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья</legend>
-                <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                          value="shaving-supplies" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group"
-                        value="shaving-supplies" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Гостиница</span>
-                    </label>
-                  </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                          value="care-products">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group"
-                        value="care-products">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Мотель</span>
-                    </label>
-                  </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="radio" name="product-group"
+                          value="accessories">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
+                      </label>
+                    </li>
 
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group"
-                        value="accessories">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Апартаменты</span>
-                    </label>
-                  </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-                </ul>
-              </fieldset>
+              <div class="filter-group">
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <fieldset class="catalog-filter-group">
+                  <legend class="range-filter-title">Стоимость, ₽:</legend>
 
-                <div class="range">
+                  <div class="range">
 
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="0" name="min-price">от
-                    </label>
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="9000" name="max-price" style="width: 80px"> до
-                    </label>
-                  </div>
-
-                  <div class="range-scale">
-                    <div class="range-bar" style="left: 10px; width: 218px">
-                      <button type="button" class="range-toggle toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button type="button" class="range-toggle toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        <input class="range-input input-left" type="number" value="0" name="min-price"><span
+                          class="range-text">от</span>
+                      </label>
+                      <label class="catalog-filter-label">
+                        <input class="range-input input-right" type="number" value="9000" name="max-price"><span
+                          class="range-text">до</span>
+                      </label>
                     </div>
-                  </div>
 
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 10px; width: 218px">
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </fieldset>
+                <div class="catalog-filter-button">
+                  <button class="button button-filter button__blue " type="submit">Примменить</button>
+                  <button class="button button-filter button-nidden" type="reset">Сбросить</button>
                 </div>
-              </fieldset>
+              </div>
+
             </form>
 
-            <div class="catalog-filter-button">
-              <button class="button button-filter button__blue " type="submit">Примменить</button>
-              <button class="button button-filter button-nidden" type="reset">Сбросить</button>
-            </div>
           </div>
         </div>
 
       </section>
 
       <section class="catalog catalog-container">
-
         <h2 class="visually-hidden">Каталог гостиниц</h2>
 
         <div class="catalog-control-panel">
 
           <b class="control-panel-title">Найдено гостиниц:<span class="control-panel-number">38</span></b>
 
-          <select class="select-control" aria-label="сортировка">
-            <option value="cheap">Сначало дешевые</option>
-          </select>
-
+          <div class="select">
+            <select class="select-control" aria-label="сортировка">
+              <option value="cheap">Сначало дешевые</option>
+            </select>
+          </div>
           <a class="card-toggle card-toggle-current" href="#"><svg width="16" height="14" viewBox="0 0 16 14"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
@@ -312,18 +319,24 @@
           </ul>
           <div class="pagination-control">
             <p class="pagination-subtitle">Гостиниц на странице:</p>
-            <select class="pagination-select" aria-label="сортировка">
-              <option value="cheap">4</option>
-            </select>
+            <div class="pagination-select">
+              <select class="pagination-select-control" aria-label="сортировка">
+                <option value="cheap">4</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
-          <a class="button newsletter-button button__blue" href="#">Подписаться</a>
+          <p class="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+          </p>
+          <button class="button newsletter-button button__blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -373,6 +386,7 @@
         </svg></a>
 
     </footer>
+
   </div>
 </body>
 
