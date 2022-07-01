@@ -1049,7 +1049,7 @@ body {
   background: rgba(242, 242, 242, 0.8);
 }
 .modal-container-close {
-  display: none;
+  /*display: none;*/
 }
 .modal {
   position: relative;
@@ -1114,7 +1114,6 @@ body {
   line-height: 26px;
 }
 .form-data {
-  /*margin: 0 0 12px 0;*/
   max-width: 420px;
   width: 100%;
   border: none;
@@ -1148,7 +1147,10 @@ body {
 }
 .appointment-form-adults,
 .appointment-form-children {
+  display: flex;
+  flex-direction: column;
   margin-top: 0;
+  position: relative;
 }
 .form-amount {
   max-width: 133px;
@@ -1175,6 +1177,17 @@ body {
 .appointment-form-date {
   grid-column: 1 / -1;
   margin: 0;
+  position: relative;
+}
+.form-data-icon {
+  position: absolute;
+  display: block;
+  top: 14px;
+  right: 19px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  opacity: 0.3;
 }
 .appointment-submit {
   grid-column: 1/-1;
@@ -1187,11 +1200,12 @@ body {
   border-radius: 10px;
 }
 
+/*** info ***/
 .info {
   display: inline-block;
-  position: relative;
-  top: 0px;
-  left: -2px;
+  position: absolute;
+  top: 8px;
+  left: 56px;
   width: 25px;
   height: 25px;
   background-color: #83b3d3;
@@ -1208,16 +1222,41 @@ body {
   height: 100%;
   background: url("../images/modal/info.svg") no-repeat center;
 }
-.form-data-icon {
+.tooltiptext {
   position: absolute;
-  display: block;
-  top: 14px;
-  right: 19px;
-  border: none;
-  background-color: #f2f2f2;
-  color: #000000;
-  opacity: 0.3;
+  width: 256px;
+  padding: 15px 20px 18px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  visibility: hidden;
 }
+.tootip-bottom {
+  transform: translate(-50%, 23%);
+}
+.tootip-bottom::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+}
+.info:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*** =============== ***/
+
 .form-data-icon:hover {
   background-color: #e6e6e6;
 }
@@ -1240,8 +1279,6 @@ body {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
-  /*border: 3px solid #83b3d3;
-  border-radius: 4px;*/
 }
 .form-number {
   top: 10px;
@@ -1279,39 +1316,4 @@ body {
 }
 .appointment-submit:focus {
   box-shadow: 0 0 0 3px #756257;
-  /*border-radius: 10px;*/
-}
-.tooltip-triangle {
-  visibility: hidden;
-  position: absolute;
-  top: 31px;
-  right: 3px;
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid #000000;
-  opacity: 0;
-}
-.modal-tooltip {
-  visibility: hidden;
-  position: absolute;
-  width: 256px;
-  top: 40px;
-  transform: translateX(-50%);
-  padding: 15px 20px 18px;
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
-  color: #ffffff;
-  background-color: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  background: url("../images/modal/triagle.svg") no-repeat center -10%;
-}
-.info:hover .modal-tooltip {
-  visibility: visible;
 }
