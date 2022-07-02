@@ -1068,7 +1068,7 @@ body {
   z-index: 1;
 }
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 .modal {
   position: relative;
@@ -1152,13 +1152,12 @@ body {
   box-shadow: 0 0 0 2px #000000;
   outline: none;
 }
-.form-data::placeholder {
+.field-group input::placeholder {
   font: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  opacity: 0.6;
 }
 .form-data::placeholder:active {
   color: #000000;
@@ -1193,6 +1192,7 @@ body {
   grid-template-columns: 288px 230px;
   gap: 12px 56px;
 }
+
 .appointment-form-date {
   grid-column: 1 / -1;
   margin: 0;
@@ -1201,8 +1201,8 @@ body {
 .form-data-icon {
   position: absolute;
   display: block;
-  top: 14px;
-  right: 19px;
+  top: 16px;
+  right: 13px;
   border: none;
   background-color: #f2f2f2;
   color: #000000;
