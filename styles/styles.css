@@ -465,7 +465,7 @@ body {
 /*стили для блока фильтров*/
 .selection {
   margin: 0;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 67px;
   background: url("../images/catalog/catalog-bg.jpg") center / cover no-repeat, #333333;
 }
 .selection-container {
@@ -531,14 +531,16 @@ body {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 437px 518px;
   column-gap: 104px;
 }
 .filter-group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 150px 150px;
   column-gap: 70px;
-  justify-items: end;
+}
+.filter-group-range {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .catalog-filter-title {
@@ -648,7 +650,7 @@ body {
   display: grid;
   width: 288px;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 .catalog-filter-label {
   position: relative;
@@ -741,7 +743,7 @@ body {
 }
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -9px;
 }
 /*** filter-button ***/
 
@@ -751,10 +753,10 @@ body {
   text-align: center;
 }
 .button-filter:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .button-filter {
-  padding: 14px 22px 14px 23px;
+  padding: 14px 29px 14px 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -766,8 +768,8 @@ body {
 .button-nidden {
   padding: 4px 14px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: none;
   background-color: transparent;
   box-sizing: border-box;
@@ -789,10 +791,13 @@ body {
 .catalog-container {
   width: 1056px;
   margin: 0 auto;
-  padding-top: 50px;
+  margin-bottom: 24px;
+  padding-top: 52px;
 }
 .catalog-control-panel {
   display: flex;
+  align-items: center;
+  margin-bottom: 56px;
 }
 .control-panel-title {
   font-weight: 700;
@@ -804,6 +809,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin-left: 8px;
 }
 .select {
   display: flex;
@@ -820,7 +826,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background: url("../images/catalog/icon/select-arrow.svg") right 20px center no-repeat;
+  background: url("../images/catalog/icon/select-arrow.svg") right 17px center no-repeat;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
@@ -935,7 +941,11 @@ body {
 .button-card {
   padding: 9px 1px 8px;
 }
+.button-grey-number {
+  margin-left: 6px;
+}
 .button__green {
+  font-weight: 400;
   background-color: #7db54f;
 }
 .button__grey {
@@ -1035,6 +1045,10 @@ body {
   display: flex;
   width: 386px;
   justify-content: space-between;
+  align-items: center;
+}
+.pagination-subtitle {
+  margin: 0;
 }
 .pagination-select {
   display: flex;
