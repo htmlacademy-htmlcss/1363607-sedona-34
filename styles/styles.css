@@ -1135,6 +1135,10 @@ body {
 .form-data {
   max-width: 420px;
   width: 100%;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1153,10 +1157,7 @@ body {
   outline: none;
 }
 .field-group input::placeholder {
-  font: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+
   color: #000000;
 }
 .form-data::placeholder:active {
@@ -1167,7 +1168,7 @@ body {
 .appointment-form-children {
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  margin-top: 4px;
   position: relative;
 }
 .form-amount {
@@ -1217,14 +1218,15 @@ body {
   font-size: 20px;
   line-height: 40px;
   border-radius: 10px;
+  margin-top: 13px;
 }
 
 /*** info ***/
 .info {
   display: inline-block;
   position: absolute;
-  top: 8px;
-  left: 56px;
+  top: 14px;
+  left: 52px;
   width: 25px;
   height: 25px;
   background-color: #83b3d3;
@@ -1244,7 +1246,7 @@ body {
 .tooltiptext {
   position: absolute;
   width: 256px;
-  padding: 15px 20px 18px;
+  padding: 15px 20px 25px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -1258,7 +1260,7 @@ body {
   visibility: hidden;
 }
 .tootip-bottom {
-  transform: translate(-50%, 23%);
+  transform: translate(-49%, 21%);
 }
 .tootip-bottom::before {
   content: "";
@@ -1281,7 +1283,7 @@ body {
 }
 .form-subtitle {
   margin-left: 155px;
-  padding-top: 12px;
+  padding-top: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
