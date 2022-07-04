@@ -130,6 +130,7 @@ body {
 
 .button {
   display: inline-block;
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -157,7 +158,7 @@ body {
   flex-grow: 1;
   margin: 0 auto;
   background-color: #ffffff;
-  transform: translateY(-5px);
+  margin-top: -5px;
 }
 .index-baner {
   padding: 51px 0 79px;
@@ -271,7 +272,8 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-/*стили для блока поиск*/
+/*** search ***/
+
 .search {
   margin: 0;
   padding: 91px 304px 93px;
@@ -289,10 +291,12 @@ body {
 .search-text {
   font-size: 22px;
   line-height: 26px;
-  margin: 0 0 56px 0;
+  margin: 0 0 54px 0;
 }
 .button-search {
-  padding: 12px 138px;
+  padding: 12px 158px;
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -461,7 +465,7 @@ body {
 /*стили для блока фильтров*/
 .selection {
   margin: 0;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 67px;
   background: url("../images/catalog/catalog-bg.jpg") center / cover no-repeat, #333333;
 }
 .selection-container {
@@ -527,14 +531,16 @@ body {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 437px 518px;
   column-gap: 104px;
 }
 .filter-group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 150px 150px;
   column-gap: 70px;
-  justify-items: end;
+}
+.filter-group-range {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .catalog-filter-title {
@@ -644,7 +650,7 @@ body {
   display: grid;
   width: 288px;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 .catalog-filter-label {
   position: relative;
@@ -737,7 +743,7 @@ body {
 }
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -9px;
 }
 /*** filter-button ***/
 
@@ -747,10 +753,10 @@ body {
   text-align: center;
 }
 .button-filter:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .button-filter {
-  padding: 14px 22px 14px 23px;
+  padding: 14px 29px 14px 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -762,8 +768,8 @@ body {
 .button-nidden {
   padding: 4px 14px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: none;
   background-color: transparent;
   box-sizing: border-box;
@@ -785,10 +791,13 @@ body {
 .catalog-container {
   width: 1056px;
   margin: 0 auto;
-  padding-top: 50px;
+  margin-bottom: 24px;
+  padding-top: 52px;
 }
 .catalog-control-panel {
   display: flex;
+  align-items: center;
+  margin-bottom: 56px;
 }
 .control-panel-title {
   font-weight: 700;
@@ -800,6 +809,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin-left: 8px;
 }
 .select {
   display: flex;
@@ -816,7 +826,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background: url("../images/catalog/icon/select-arrow.svg") right 20px center no-repeat;
+  background: url("../images/catalog/icon/select-arrow.svg") right 17px center no-repeat;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   appearance: none;
@@ -931,7 +941,11 @@ body {
 .button-card {
   padding: 9px 1px 8px;
 }
+.button-grey-number {
+  margin-left: 6px;
+}
 .button__green {
+  font-weight: 400;
   background-color: #7db54f;
 }
 .button__grey {
@@ -1031,6 +1045,10 @@ body {
   display: flex;
   width: 386px;
   justify-content: space-between;
+  align-items: center;
+}
+.pagination-subtitle {
+  margin: 0;
 }
 .pagination-select {
   display: flex;
@@ -1047,9 +1065,10 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+  z-index: 1;
 }
 .modal-container-close {
-  /*display: none;*/
+  /* display: none; */
 }
 .modal {
   position: relative;
@@ -1116,6 +1135,10 @@ body {
 .form-data {
   max-width: 420px;
   width: 100%;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1133,13 +1156,9 @@ body {
   box-shadow: 0 0 0 2px #000000;
   outline: none;
 }
-.form-data::placeholder {
-  font: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+.field-group input::placeholder {
+
   color: #000000;
-  opacity: 0.6;
 }
 .form-data::placeholder:active {
   color: #000000;
@@ -1149,7 +1168,7 @@ body {
 .appointment-form-children {
   display: flex;
   flex-direction: column;
-  margin-top: 0;
+  margin-top: 4px;
   position: relative;
 }
 .form-amount {
@@ -1174,6 +1193,7 @@ body {
   grid-template-columns: 288px 230px;
   gap: 12px 56px;
 }
+
 .appointment-form-date {
   grid-column: 1 / -1;
   margin: 0;
@@ -1182,8 +1202,8 @@ body {
 .form-data-icon {
   position: absolute;
   display: block;
-  top: 14px;
-  right: 19px;
+  top: 16px;
+  right: 13px;
   border: none;
   background-color: #f2f2f2;
   color: #000000;
@@ -1198,14 +1218,15 @@ body {
   font-size: 20px;
   line-height: 40px;
   border-radius: 10px;
+  margin-top: 13px;
 }
 
 /*** info ***/
 .info {
   display: inline-block;
   position: absolute;
-  top: 8px;
-  left: 56px;
+  top: 14px;
+  left: 52px;
   width: 25px;
   height: 25px;
   background-color: #83b3d3;
@@ -1225,7 +1246,7 @@ body {
 .tooltiptext {
   position: absolute;
   width: 256px;
-  padding: 15px 20px 18px;
+  padding: 15px 20px 25px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -1239,7 +1260,7 @@ body {
   visibility: hidden;
 }
 .tootip-bottom {
-  transform: translate(-50%, 23%);
+  transform: translate(-49%, 21%);
 }
 .tootip-bottom::before {
   content: "";
@@ -1262,7 +1283,7 @@ body {
 }
 .form-subtitle {
   margin-left: 155px;
-  padding-top: 12px;
+  padding-top: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
