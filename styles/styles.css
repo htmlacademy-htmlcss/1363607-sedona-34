@@ -171,7 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 282px;
+  /* max-height: 282px; */
   align-items: center;
   text-align: center;
   padding: 63px 270px 90px 270px;
@@ -384,7 +384,7 @@ body {
   margin: 0 auto;
 }
 .footer-social {
-  max-width: 144px;
+  width: 144px;
 }
 .footer-social-list {
   display: flex;
@@ -418,6 +418,7 @@ body {
 }
 
 .footer-phone {
+  width: 332px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -840,6 +841,12 @@ body {
 .pagination-select-control:active {
   border: 2px solid #3f5e72;
 }
+.card-toggle-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 170px;
+}
 .card-toggle {
   display: flex;
   align-items: center;
@@ -1003,8 +1010,8 @@ body {
 }
 .pagination-link {
   display: flex;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 12px 24px;
   font-weight: 700;
   font-size: 20px;
