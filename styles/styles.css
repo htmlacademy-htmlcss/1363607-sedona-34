@@ -849,6 +849,11 @@ body {
 .pagination-select-control:active {
   border: 2px solid #3f5e72;
 }
+.select-control[disabled],
+.pagination-select-control[disabled] {
+  color: rgba(0, 0, 0, 0.3)
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
 .card-toggle-container {
   display: flex;
   align-items: center;
