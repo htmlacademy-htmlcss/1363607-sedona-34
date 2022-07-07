@@ -219,7 +219,7 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-date">
               <label class="field-group">Дата Заезда:
-                <input class="form-data" type="text" name="appointment-date" placeholder="27 апреля 2020">
+                <input class="form-data" type="text" name="appointment-date" placeholder="27 апреля 2020" required>
                 <span class="form-subtitle error">Мы не можем отправить вас в прошлое.</span>
               </label>
               <button class="form-data-icon" type="submit"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -236,7 +236,7 @@
 
             <p class="appointment-form-date">
               <label class="field-group">Дата Выезда:
-                <input class="form-data" type="text" name="appointment-date" placeholder="1 сентября 2021">
+                <input class="form-data" type="text" name="appointment-date" placeholder="1 сентября 2021" required>
                 <span class="form-subtitle">На эти даты есть свободные номера. Пока есть.</span>
               </label>
               <button class="form-data-icon" type="submit"><svg width="15" height="15" viewBox="0 0 15 15"
@@ -251,7 +251,7 @@
 
             <p class="appointment-form-adults">
               <label class="field-group">Взрослые:
-                <input class="form-amount" type="text" name="appointment-date" placeholder="">
+                <input class="form-amount" type="text" name="appointment-date" placeholder="1" required>
               </label>
               <button class="form-toggle toggle-left" type="button"><svg width="13" height="1" viewBox="0 0 13 1"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +266,7 @@
 
             <p class="appointment-form-children">
               <label class="field-group">Дети:
-                <input class="form-amount" type="text" name="appointment-date" placeholder="">
+                <input class="form-amount" type="text" name="appointment-date" placeholder="2" required>
               </label>
               <button class="info" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию.</span>
