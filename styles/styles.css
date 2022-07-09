@@ -234,6 +234,9 @@ body {
   color: #000000;
   margin: 0 0 30px 0;
 }
+.title-top {
+  margin-top: 102px;
+}
 .advantages-title__white {
   color: #ffffff;
 }
@@ -251,19 +254,15 @@ body {
   margin: 0;
 }
 
-.advantages-icon {
-  margin: 0 0 28px 0;
-  width: 75px;
-  height: 76px;
+
+.card-icon-house {
+  background: url("../images/advantages/icon/hause.svg") no-repeat center 80px;
 }
-.advantages-house {
-  background: url("../images/advantages/icon/hause.svg") no-repeat center center;
+.card-icon-food {
+  background: url("../images/advantages/icon/burger.svg") no-repeat center 80px;
 }
-.advantages-food {
-  background: url("../images/advantages/icon/burger.svg") no-repeat center center;
-}
-.advantages-grid-souvenirs {
-  background: url("../images/advantages/icon/souvenirs.svg") no-repeat center center;
+.card-icon-souvenirs {
+  background: url("../images/advantages/icon/souvenirs.svg") no-repeat center 80px;
 }
 .advantages-blue {
   padding: 92px 85px;
