@@ -503,7 +503,6 @@ body {
   display: block;
   min-width: 13px;
   min-height: 16px;
-  padding: 3;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -636,9 +635,7 @@ body {
   box-shadow: 0 0 0 3px #83B3D3;
   border: none;
 }
-.control-input[type="radio"]:focus:not(checked) + .control-mark {
-  border: 3px solid #83b3d3;
-}
+
 .control-input[disabled] + .control-mark {
   opacity: 0.3;
 }
@@ -864,7 +861,7 @@ body {
 }
 .select-control[disabled],
 .pagination-select-control[disabled] {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
 .card-toggle-container {
